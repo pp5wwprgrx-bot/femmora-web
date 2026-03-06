@@ -1,101 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Femmora Crafts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Femmora | Premium Custom Gifts</title>
 
 <style>
 
 body{
-font-family:Arial;
 margin:0;
-background:#fafafa;
+font-family:Arial, sans-serif;
+background:linear-gradient(120deg,#ff758c,#ff7eb3,#fad0c4);
+color:#333;
 }
 
-/* NAVBAR */
+/* HEADER */
 
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:black;
+header{
+background:#111;
 color:white;
-padding:15px 40px;
-position:sticky;
-top:0;
+padding:20px;
+text-align:center;
+font-size:22px;
+letter-spacing:2px;
 }
 
-.navbar a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-size:16px;
-}
-
-/* HERO */
+/* HERO BANNER */
 
 .hero{
+height:400px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1519681393784-d120267933ba');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
 text-align:center;
-padding:60px 20px;
 }
 
 .hero h1{
-font-size:36px;
+font-size:40px;
+margin-bottom:10px;
 }
 
 .hero p{
-color:#555;
+font-size:18px;
+margin-bottom:20px;
 }
 
-/* PRODUCTS */
+.hero button{
+background:#ff4d6d;
+border:none;
+padding:12px 25px;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
 
-.products{
+.hero button:hover{
+background:#ff1e4d;
+}
+
+/* SERVICES */
+
+.services{
+padding:50px;
+text-align:center;
+background:white;
+}
+
+.services h2{
+margin-bottom:40px;
+}
+
+.service-box{
 display:flex;
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
 gap:25px;
-padding:40px;
 }
 
 .card{
-background:white;
+background:#f7f7f7;
+padding:25px;
 width:250px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-padding:15px;
-transition:0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-5px);
+transition:0.3s;
 }
 
-.card img{
-width:100%;
-border-radius:10px;
-transition: transform 0.4s;
-}
-.card img:h0ver{
-transform: scale(1.1);
-}
-.card h3{
-margin:10px 0;
-}
+/* CUSTOMER REVIEWS */
 
-.button{
-display:inline-block;
-padding:10px 20px;
-background:#e91e63;
-color:white;
-text-decoration:none;
-border-radius:6px;
-margin-top:10px;
-}
-
-/* SOCIAL */
-
-.social{
+.reviews{
+background:#f2f2f2;
+padding:40px;
 text-align:center;
-margin:40px;
+}
+
+.review-box{
+max-width:700px;
+margin:auto;
+font-style:italic;
+margin-bottom:20px;
+}
+
+/* CONTACT */
+
+.contact{
+background:#111;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.contact a{
+color:#ff758c;
+text-decoration:none;
+font-weight:bold;
 }
 
 /* FOOTER */
@@ -105,111 +134,119 @@ background:black;
 color:white;
 text-align:center;
 padding:15px;
-}
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-.products{
-flex-direction:column;
-align-items:center;
-}
-
-.navbar{
-flex-direction:column;
-}
-
+font-size:14px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="navbar">
+<header>
+FEMMORA – Premium Custom Gifts
+</header>
 
-<div><b>Femmora Crafts</b></div>
+<section class="hero">
+<h1>Handmade Gifts Made With Love</h1>
+<p>Custom hampers, bouquets, photo frames & more</p>
+<button>Order Now</button>
+</section>
 
-<div>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
-</div>
+<section class="services">
 
-</div>
+<h2>Our Services</h2>
 
-<div class="hero">
-<img src="images/banner.jpg" style="width:100%;max-height:400px;object-fit:cover;border-radius:10px;">
-<h1>Handmade Gifts & Custom Crafts</h1>
-<p>Beautiful personalized gifts for every special moment</p>
-</div>
-
-<div class="products">
+<div class="service-box">
 
 <div class="card">
-<img src="images/hamper.jpg">
-<h3>Gift Hamper</h3>
-<p>Perfect for birthdays & surprises</p>
-<a class="button" href="https://wa.me/919656620425">Order on WhatsApp</a>
+<h3>Birthday Hampers</h3>
+<p>Beautiful customised birthday gift hampers.</p>
 </div>
 
 <div class="card">
-<img src="images/frame.jpg">
-<h3>Photo Frame</h3>
-<p>Customized memories for your loved ones</p>
-<a class="button" href="https://wa.me/919656620425">Order on WhatsApp</a>
+<h3>Photo Frames</h3>
+<p>Premium handcrafted photo frames.</p>
 </div>
 
 <div class="card">
-<img src="images/bouquet.jpg">
-<h3>bouquet</h3>
-<p>Elegant handmade for your loved ones</p>
-<a class="button" href="https://wa.me/919656620425">Order on WhatsApp</a>
+<h3>Name Wallet</h3>
+<p>Custom engraved name wallets.</p>
 </div>
-<div style="padding:40px;text-align:center">
 
-<h2>Why Choose Femmora?</h2>
+<div class="card">
+<h3>Ring Album</h3>
+<p>Perfect surprise for your loved ones.</p>
+</div>
 
-<p>✨ 100% Handmade Crafts</p>
-<p>🎁 Fully Customized Gifts</p>
-<p>🚚 Fast Delivery</p>
-<p>❤️ Made with Love & Creativity</p>
+<div class="card">
+<h3>Nikah Book</h3>
+<p>Elegant Islamic wedding memory books.</p>
+</div>
 
+<div class="card">
+<h3>Save The Date</h3>
+<p>Creative digital save-the-date videos.</p>
+</div>
 
 </div>
-<div style="background:#f2f2f2;padding:40px;text-align:center">
+
+</section>
+
+<section class="reviews">
 
 <h2>Customer Reviews</h2>
 
-<p>"Amazing gift hamper! My friend loved it." ⭐⭐⭐⭐⭐</p>
+<div class="review-box">
+"Amazing gift hamper! My friend loved it." ⭐⭐⭐⭐⭐
+</div>
 
-<p>"Beautiful craftsmanship and fast delivery." ⭐⭐⭐⭐⭐</p>
+<div class="review-box">
+"Beautiful craftsmanship and fast delivery." ⭐⭐⭐⭐⭐
+</div>
 
-<p>"Highly recommend Femmora crafts!" ⭐⭐⭐⭐⭐</p>
+<div class="review-box">
+"Highly recommend Femmora crafts!" ⭐⭐⭐⭐⭐
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>WhatsApp: +919656620425</p>
+
+<p>Order your customised gift today</p>
+
+<p>
+Website: 
+<a href="https://pp5wwprgrx-bot.github.io/femmora-web/">
+Visit Femmora
+</a>
+</p>
+
+<p>Delivery Available All Over India</p>
+
+</section>
+<a class="button" href="https://wa.me/919656620425">Order on WhatsApp</a>
+</div>
 
 </div>
+
 <div class="social">
 
 <a class="button" href="https://instagram.com/femmora_______">Visit Our Instagram</a>
 
 </div>
 
+
 <footer>
-
-© 2026 Femmora Crafts
-
+© 2026 Femmora Crafts | All Rights Reserved
 </footer>
-<a href="https://wa.me/919656620425" 
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
-padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-WhatsApp
-</a>
 
 </body>
 </html>
+
 
 
 
